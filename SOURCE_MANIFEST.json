@@ -1,0 +1,40 @@
+{
+  "schema": "crk.thesis.source_manifest.v2",
+  "phase": "0B-2.1",
+  "formal_code_migrated": true,
+  "core_self_contained": true,
+  "runtime_legacy_dependency": false,
+  "semantic_authority": "CH3 accepted working snapshot",
+  "source_provenance": "docs/provenance/ch3_to_core_migration_manifest.json",
+  "environment_contract": {
+    "agents": 4,
+    "role_order": [
+      "search_fast",
+      "search_balanced",
+      "search_precise",
+      "executor"
+    ],
+    "observation_dimensions": [28, 28, 28, 28],
+    "action_dimensions": [3, 3, 3, 3],
+    "canonical_profile": "M20_MOVING_UNKNOWN_MULTI"
+  },
+  "phase0b2_validation": {
+    "unit_tests": "17/17",
+    "legacy_vs_core_e0": "60/60",
+    "core_only_e0": "60/60",
+    "maximum_absolute_difference": 0.0,
+    "task_event_mismatch_count": 0,
+    "training_smoke_passed": true,
+    "checkpoint_roundtrip_passed": true
+  },
+  "chapter_status": {
+    "chapter3_bser": "not_implemented",
+    "chapter4_rcag": "not_implemented",
+    "chapter5_vsgc": "not_implemented"
+  },
+  "historical_sources": {
+    "CH3": "accepted read-only reference outside this repository",
+    "CH4": "read-only reference outside this repository",
+    "CH5": "read-only reference outside this repository"
+  }
+}
